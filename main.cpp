@@ -270,6 +270,7 @@ void GetData( std::string str, std::string  &var, std::string &dat )
 	int pos, len;
 	std::string s = str;
 
+
 	while((pos=s.find("\n")) > -1)
 	{
 		s.replace(pos, 1,"" );
