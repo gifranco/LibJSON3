@@ -255,21 +255,10 @@ parseCommandLine( int argc, const char *argv[],
    return 0;
 }
 
-
-std::string Replace(std::string a,std::string b,std::string c)
-{
-        int pos = a.find(b);
-
-        a.replace(pos, c.length(), c);
-
-        return a;
-}
-
 void GetData( std::string str, std::string  &var, std::string &dat )
 {
 	int pos, len;
 	std::string s = str;
-
 
 	while((pos=s.find("\n")) > -1)
 	{
